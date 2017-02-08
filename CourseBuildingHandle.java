@@ -6,6 +6,7 @@ public abstract class CourseBuildingHandle
     protected abstract Course makeCourse(String courseType);
 
     /* Act as an order mechanism for courses that have special things */
+    /*
     public Course orderTheCourse(String courseType)
     {
         Course newCourse = makeCourse(courseType);
@@ -14,4 +15,5 @@ public abstract class CourseBuildingHandle
 
         return newCourse;
     }
+    *.
 }
