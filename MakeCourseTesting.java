@@ -2,12 +2,11 @@ public class MakeCourseTesting
 {
     public static void main(String [] args)
     {
-        CourseBuildingForm MakeCourse = new CourseBuildingForm();
+        FactoryBuildingForm MakeCourse = new FactoryBuildingForm();
 
-        Course CS = MakeCourse.createCourse("Self-Pace");
-        //System.out.println(CS + "\n");
 
-        //Course CS = MakeCourse.orderTheCourse("CS");
-        //System.out.println(CS + "\n");
+        Course CS = MakeCourse.createCourse("Self-Pace", "Object-Oriented-Design", 20000.00, "GW", "CS", "1-10-17", "5-21-17");
+        System.out.println(CS.getName());
+
     }
 }

@@ -1,28 +1,6 @@
-/*
-public interface CourseFactory
-{
-    public void addCodingLab();
-    public void addCodingProject();
-}
-*/
-
-
-/* public class CourseFactory
-    /* if "Semester"
-        - make semester course
-    if "Self-pace"
-        - Make self-pace course
-
-
-
-*/
-
-
-
-
 public class CourseFactory
 {
-    protected CourseFactory CourseFactory(String courseType, String n, Double f, String u, String s, String uploadDate, String expiration)
+    protected Course createCourse(String courseType, String n, Double f, String u, String s, String uploadDate, String expiration)
     {
         /*
         if (courseType.equals("Self-Pace"))
@@ -36,9 +14,10 @@ public class CourseFactory
         }
         */
         SelfPaceCourse spc = new SelfPaceCourse(n, f, u, s, uploadDate, expiration);
+        return spc;
     }
 
-    protected CourseFactory CourseFactory(String courseType, String n, Double f, String u, String s, String semester, Double duration, Double credits, String certification, String instructor)
+    protected Course createCourse(String courseType, String n, Double f, String u, String s, String semester, Double duration, Double credits, String certification, String instructor)
     {
         /*
         if (courseType.equals("Self-Pace"))
@@ -52,5 +31,6 @@ public class CourseFactory
         }
         */
         SemesterCourse sc = new SemesterCourse(n, f, u, s, semester, duration, credits, certification, instructor);
+        return sc;
     }
 }
