@@ -7,7 +7,6 @@ public abstract class Course
 
 
     // constructor
-
     public Course(String n, Double f, String u, String s)
     {
         this.name = n;
