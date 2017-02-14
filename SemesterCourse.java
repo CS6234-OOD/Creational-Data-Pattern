@@ -6,7 +6,9 @@ public class SemesterCourse extends Course
     private String certification;
     private String instructor;
 
-    public SemesterCourse(String n, Double f, String u, String s, String semester, Double duration, Double credits, String certification, String instructor)
+    public SemesterCourse(String n, Double f, String u, String s,
+    String semester, Double duration, Double credits,
+    String certification, String instructor)
     {
         super(n, f, u, s);
         this.semester = semester;
@@ -21,7 +23,7 @@ public class SemesterCourse extends Course
         return semester;
     }
 
-    public void setUploadDate(String semester)
+    public void setSemster(String semester)
     {
         this.semester = semester;
     }
