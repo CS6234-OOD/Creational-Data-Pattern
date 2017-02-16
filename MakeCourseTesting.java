@@ -11,6 +11,7 @@ public class MakeCourseTesting
 
         Course calculus = MakeCourse.createCourse("Semester", "Calculus-I", 4000.0, "GW", "Math", "Spring 2017", 90.0, 3.0, "Junior Calc", "Calc");
         System.out.println(calculus.getName());
+        System.out.println(calculus.getType());
 
     }
 }
