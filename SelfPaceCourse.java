@@ -3,10 +3,10 @@ public class SelfPaceCourse extends Course
     private String uploadDate;
     private String expiration;
 
-    public SelfPaceCourse(String n, Double f, String u, String s,
+    public SelfPaceCourse(String courseType, String n, Double f, String u, String s,
     String uploadDate, String expiration)
     {
-        super(n, f, u, s);
+        super(courseType, n, f, u, s);
         this.uploadDate = uploadDate;
         this.expiration = expiration;
     }

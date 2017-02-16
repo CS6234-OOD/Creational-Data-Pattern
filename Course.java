@@ -1,5 +1,6 @@
 public abstract class Course
 {
+    private String courseType;
     private String name;
     private Double fee;
     private String university;
@@ -7,12 +8,23 @@ public abstract class Course
 
 
     // constructor
-    public Course(String n, Double f, String u, String s)
+    public Course(String courseType, String n, Double f, String u, String s)
     {
+        this.courseType = courseType;
         this.name = n;
         this.fee = f;
         this.university = u;
         this.subject = s;
+    }
+
+    public String getType()
+    {
+        return courseType;
+    }
+
+    public void setType(String type)
+    {
+        this.courseType = type;
     }
 
     public String getName()
@@ -24,7 +36,7 @@ public abstract class Course
     {
         this.name = name;
     }
-    
+
 
     public Double getFee()
     {

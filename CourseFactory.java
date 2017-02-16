@@ -4,7 +4,7 @@ public class CourseFactory
     String uploadDate, String expiration)
     {
 
-        SelfPaceCourse spc = new SelfPaceCourse(n, f, u, s, uploadDate, expiration);
+        SelfPaceCourse spc = new SelfPaceCourse(courseType, n, f, u, s, uploadDate, expiration);
         return spc;
     }
 
@@ -12,7 +12,7 @@ public class CourseFactory
     Double duration, Double credits, String certification, String instructor)
     {
 
-        SemesterCourse sc = new SemesterCourse(n, f, u, s, semester, duration, credits, certification, instructor);
+        SemesterCourse sc = new SemesterCourse(courseType, n, f, u, s, semester, duration, credits, certification, instructor);
         return sc;
     }
 }
